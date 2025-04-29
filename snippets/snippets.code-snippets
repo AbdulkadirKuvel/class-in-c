@@ -1,0 +1,36 @@
+{
+    "Class-header in C": {
+        "prefix":"class_h",
+        "body": [
+            "struct ${1:Class} {",
+            "${2:int} ${3:prop};",
+            "};",
+            "",
+            "typedef struct ${1}* ${1};",
+            "",
+            "${1} ${4:Constructor}(${2});",
+            "void ${5:Destructor}(${1});",
+        ],
+        "description": "Creates a header class-like struct for c"
+    },
+
+    "Class-body in C":{
+        "prefix": "class_c",
+        "body": [
+            "${1:Class} ${2:Constructor}(${3:int} ${4:prop}) {",
+            "   ${1} this;",
+            "   this = (${1})malloc(sizeof(struct ${1}));",
+            "   this->${4} = ${4};",
+            "   return this;",
+            "}",
+            "",
+            "void ${5:Destructor}(${1} this) {",
+            "   if (this == NULL) return;",
+            "   free(this);",
+            "}",
+            ""
+
+        ],
+        "description": "Creates a class-like struct in C"
+    }
+}

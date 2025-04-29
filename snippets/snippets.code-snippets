@@ -12,7 +12,7 @@
             "${5} ${6:Constructor}(${2});",
             "void ${4}(${5});",
         ],
-        "description": "Creates a header class-like struct for C, requires stdlib.h"
+        "description": "Creates a header of class-like struct for C, requires stdlib.h"
     },
 
     "Class-body in C":{
@@ -34,6 +34,6 @@
             ""
 
         ],
-        "description": "Creates a class-like struct in C, requires stdlib.h"
+        "description": "Creates a body of class-like struct for C, requires stdlib.h"
     }
 }

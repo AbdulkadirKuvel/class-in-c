@@ -4,7 +4,11 @@ Welcome to Class in C, an extension which was created due my homework.
 
 ## Features 
 
-![example video](assets/example.mp4)
+An easier way to create class-like struct in c
+
+For header files, just type down "class_h" to create the header part, and "class_c" for source. 
+
+ <!-- ![example video](assets/example.mp4) -->
 
 ## Requirements
 

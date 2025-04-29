@@ -1,7 +1,7 @@
 {
-  "name": "ClassInC",
+  "name": "class-in-c",
   "publisher": "Abdulkadir",
-  "displayName": "Class-in-C",
+  "displayName": "Class in C",
   "description": "Creates a class-like struct in C",
   "version": "0.0.1",
   "repository": {

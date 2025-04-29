@@ -1,6 +1,6 @@
-# ClassInC 
+# Class In C 
 
-Welcome to ClassInC, an extension which was created due my homework.
+Welcome to Class in C, an extension which was created due my homework.
 
 ## Features 
 

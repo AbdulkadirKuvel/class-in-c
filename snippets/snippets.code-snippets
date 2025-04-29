@@ -2,16 +2,17 @@
     "Class-header in C": {
         "prefix":"class_h",
         "body": [
-            "struct ${1:Class} {",
+            "struct ${1:CLASS} {",
             "   ${2:int} ${3:prop};",
+            "   void (*${4:Destructor})(struct ${1}*);",
             "};",
             "",
-            "typedef struct ${1}* ${1};",
+            "typedef struct ${1}* ${5:Class};",
             "",
-            "${1} ${4:Constructor}(${2});",
-            "void ${5:Destructor}(${1});",
+            "${5} ${6:Constructor}(${2});",
+            "void ${4}(${5});",
         ],
-        "description": "Creates a header class-like struct for c"
+        "description": "Creates a header class-like struct for C, requires stdlib.h"
     },
 
     "Class-body in C":{
@@ -19,18 +20,20 @@
         "body": [
             "${1:Class} ${2:Constructor}(${3:int} ${4:prop}) {",
             "   ${1} this;",
-            "   this = (${1})malloc(sizeof(struct ${1}));",
+            "   this = (${1})malloc(sizeof(struct ${5:CLASS}));",
             "   this->${4} = ${4};",
+            "   this->${6:Destructor} = &${6};",
+            "",
             "   return this;",
             "}",
             "",
-            "void ${5:Destructor}(${1} this) {",
+            "void ${6}(${1} this) {",
             "   if (this == NULL) return;",
             "   free(this);",
             "}",
             ""
 
         ],
-        "description": "Creates a class-like struct in C"
+        "description": "Creates a class-like struct in C, requires stdlib.h"
     }
 }

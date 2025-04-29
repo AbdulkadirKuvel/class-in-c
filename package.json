@@ -4,6 +4,10 @@
   "displayName": "Class-in-C",
   "description": "Creates a class-like struct in C",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbdulkadirKuvel/class-in-c.git"
+  },
   "engines": {
     "vscode": "^1.99.0"
   },

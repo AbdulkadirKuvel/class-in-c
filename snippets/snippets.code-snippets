@@ -3,7 +3,7 @@
         "prefix":"class_h",
         "body": [
             "struct ${1:Class} {",
-            "${2:int} ${3:prop};",
+            "   ${2:int} ${3:prop};",
             "};",
             "",
             "typedef struct ${1}* ${1};",
